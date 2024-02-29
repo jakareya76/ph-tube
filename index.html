@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="container mx-auto">
+      <nav class="flex items-center justify-between py-8 border-b-2">
+        <div>
+          <img src="./img/Logo.png" alt="logo" />
+        </div>
+        <div>
+          <button class="btn px-8">Sort by view</button>
+        </div>
+        <div>
+          <button class="bg-[#FF1F3D] btn text-white hover:bg-[#FF1F3D]">
+            Blog
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="container mx-auto">
+      <section class="py-8">
+        <!-- Btn Container -->
+        <div
+          id="btn-container"
+          class="flex items-center justify-center gap-5"
+        ></div>
+
+        <!-- video container -->
+        <div
+          id="video-container"
+          class="grid grid-cols-1 gap-16 place-items-center mt-20 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        ></div>
+
+        <!-- No Video Found Area -->
+        <div id="no-content-found" class="hidden">
+          <div class="w-full flex flex-col items-center justify-center mt-5">
+            <img src="./img/Icon.png" alt="" />
+            <h2 class="text-4xl font-bold text-center my-5">
+              Oops!! Sorry, There is no <br />
+              content here
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
